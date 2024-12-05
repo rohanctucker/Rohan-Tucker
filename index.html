@@ -681,121 +681,319 @@ What sets Rohan apart is his ability to connect with others. He is willing to go
       </article>
 
 
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
 
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
 
-     <!-- Portfolio Section -->
-<article class="portfolio" data-page="portfolio">
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="css/style.css">
 
-  <header>
-    <h2 class="h2 article-title">Portfolio</h2>
-  </header>
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+</head>
 
-  <section class="projects">
+<body>
 
-    <!-- Filter List -->
-    <ul class="filter-list">
+  <!--
+    - #MAIN
+  -->
 
-      <li class="filter-item">
-        <button class="active" data-filter-btn>All</button>
-      </li>
+  <main>
 
-      <li class="filter-item">
-        <button data-filter-btn>Machine Learning</button>
-      </li>
+    <!--
+      - #SIDEBAR
+    -->
 
-      <li class="filter-item">
-        <button data-filter-btn>Data Analytics</button>
-      </li>
+    <aside class="sidebar" data-sidebar>
 
-      <li class="filter-item">
-        <button data-filter-btn>Business Insights</button>
-      </li>
+      <div class="sidebar-info">
 
-      <li class="filter-item">
-        <button data-filter-btn>Dashboards & Visualizations</button>
-      </li>
+        <figure class="avatar-box">
+          <img src="images/RohanT-avatar-new.png" alt="New avatar of Rohan Tucker" width="90">
+        </figure>
 
-    </ul>
+        <div class="info-content">
+          <h1 class="name" title="Rohan Tucker">Rohan Tucker</h1>
 
-    <!-- Project List -->
-    <ul class="project-list">
+          <p class="title">Data Scientist & HR Project Manager </p>
+        </div>
 
-      <!-- Heart Disease Prediction -->
-      <li class="project-item active" data-filter-item data-category="machine learning">
-        <a href="https://github.com/rohanctucker/Heart-Disease-Prediction" target="_blank">
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
 
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
             </div>
-            <img src="images/hdp.jpg" alt="Heart Disease Prediction" loading="lazy">
-          </figure>
 
-          <h3 class="project-title">Heart Disease Prediction</h3>
-          <p class="project-category">Machine Learning</p>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
 
-        </a>
-      </li>
-
-      <!-- Loan Default Prediction -->
-      <li class="project-item active" data-filter-item data-category="machine learning">
-        <a href="https://github.com/rohanctucker/Loan-Default-Prediction" target="_blank">
-
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
+              <a href="mailto:rohanctucker@yahoo.com" class="contact-link">rohanctucker@yahoo.com</a>
             </div>
-            <img src="images/loan-image.jpg" alt="Loan Default Prediction" loading="lazy">
-          </figure>
 
-          <h3 class="project-title">Loan Default Prediction</h3>
-          <p class="project-category">Machine Learning</p>
+          </li>
 
-        </a>
-      </li>
+          <li class="contact-item">
 
-      <!-- Energy Efficiency Prediction -->
-      <li class="project-item active" data-filter-item data-category="machine learning">
-        <a href="https://github.com/rohanctucker/Energy-Efficiency-Prediction" target="_blank">
-
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
             </div>
-            <img src="images/energy-efficient-buildings.jpg" alt="Energy Efficiency Prediction" loading="lazy">
-          </figure>
 
-          <h3 class="project-title">Energy Efficiency Prediction</h3>
-          <p class="project-category">Machine Learning</p>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
 
-        </a>
-      </li>
-
-      <!-- Example for Data Analytics -->
-      <li class="project-item active" data-filter-item data-category="data analytics">
-        <a href="#">
-
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
+              <a href="tel:+12133522795" class="contact-link">+1 (347) 306-5697</a>
             </div>
-            <img src="images/example-data-analytics.jpg" alt="Example Data Analytics" loading="lazy">
-          </figure>
 
-          <h3 class="project-title">Example Data Analytics</h3>
-          <p class="project-category">Data Analytics</p>
+          </li>
 
-        </a>
-      </li>
+          <li class="contact-item">
 
-    </ul>
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
 
-  </section>
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
 
-</article>
+              <time datetime="1998-02-18">February 18, 1998</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>New York, New York USA</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/rohan-tucker/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://x.com/QueryPotter" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.youtube.com/channel/UCZAI3bTAkEJ2xdZa4rcIIlA" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm a data scientist and senior project manager specializing in HR innovation, leveraging AI and machine learning to drive workforce transformation, optimize processes, and deliver over $147M in organizational value.
+          </p>
+
+          <p>
+            As the world of work evolves with 5 generations in the workforce, increasing numbers of contingent workers, and the integration of AI, I am passionate about using data analytics, strategic workforce planning, leadership development, change management, and behavioral economics to positively shape the new work environment.
+          </p>
+        </section>
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What I'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="images/icon-design.svg" alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Alchemy</h4>
+
+                <p class="service-item-text">
+                  Turning raw data into golden insights that spark innovation.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Revolutionizing Work</h4>
+
+                <p class="service-item-text">
+                  Reimagining HR systems and strategies to unlock human potential.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Making Noise</h4>
+
+                <p class="service-item-text">
+                  Using my voice and vision to challenge norms and inspire progress.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Redefining Access</h4>
+
+                <p class="service-item-text">
+                  Building tools and content that makes knowledge more accessible to all.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
 
 
+
+   
 
 
       <!--
